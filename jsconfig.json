@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "paths": {
+            "@/*": ["./src/*"]
+        },
+        "module": "ES6",
+        "jsx": "preserve",
+        "checkJs": true,
+        "moduleResolution": "node"
+    },
+}

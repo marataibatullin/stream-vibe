@@ -1,3 +1,4 @@
+// @ts-ignore
 import { defineConfig } from "minista"
 import path from 'path'
 
@@ -63,8 +64,8 @@ export default defineConfig({
   },
   resolve: {
     alias: [{
-        find: '@/',
-        replacement: path.resolve('src') + '/'
+      find: '@/',
+      replacement: path.resolve('src') + '/',
     }],
   },
   css: {
@@ -78,7 +79,7 @@ export default defineConfig({
     preprocessorOptions: {
       scss: {
         additionalData: `
-          @use '@/styles/helpers' as *
+          @use '@/styles/helpers' as *;
         `,
         silenceDeprecations: ['legacy-js-api']
       },

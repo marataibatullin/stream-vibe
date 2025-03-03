@@ -1,9 +1,12 @@
+import Logo from '@/components/Logo';
 import './Header.scss'
 
 const Header = () => {
     return (
         <header className='header'>
-            HEADER
+            <div className="header__inner container">
+                <Logo loading="eager"/>
+            </div>
         </header>
     )
 }

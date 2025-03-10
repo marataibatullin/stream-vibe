@@ -38,40 +38,42 @@ const Header = (props) => {
                     className='header__top'
                     loading="eager"
                 />
-                <nav className="header__menu">
-                    <ul className="header__menu-list">
-                        {menuItems.map(({ label, href }, index) => (
-                            <li className="header__menu-item" key={index}>
-                                <a 
-                                    href={href} 
-                                    className={classNames("header__menu-link", {
-                                        'is-active': href === url
-                                    })}
-                                >
-                                    {label}
-                                </a>
-                            </li>
-                        ))}
-                    </ul>
-                </nav>
-                <div className="header__actions">
-                    <Button 
-                        className='header__button'
-                        label="Search"
-                        isLabelVisible
-                        mode="transparent"
-                        iconName='search'
-                    />
-                    <Button 
-                        href="/" 
-                        label="Notifications"
-                        isLabelVisible
-                        mode="transparent"
-                        iconName='notification'
-                    />
-                </div>
+                <dialog className="header__overlay-menu-dialog">
+                    <nav className="header__menu">
+                        <ul className="header__menu-list">
+                            {menuItems.map(({ label, href }, index) => (
+                                <li className="header__menu-item" key={index}>
+                                    <a 
+                                        href={href} 
+                                        className={classNames("header__menu-link", {
+                                            'is-active': href === url
+                                        })}
+                                    >
+                                        {label}
+                                    </a>
+                                </li>
+                            ))}
+                        </ul>
+                    </nav>
+                    <div className="header__actions">
+                        <Button 
+                            className='header__button'
+                            label="Search"
+                            isLabelVisible
+                            mode="transparent"
+                            iconName='search'
+                        />
+                        <Button 
+                            href="/" 
+                            label="Notifications"
+                            isLabelVisible
+                            mode="transparent"
+                            iconName='notification'
+                        />
+                    </div>
+                </dialog>
                 <BurgerButton 
-                    className="header__burger-button"
+                    className="header__burger-button visible-tablet"
                 />
             </div>
         </header>

@@ -4,6 +4,7 @@ import './BurgerButton.scss'
 const BurgerButton = (props) => {
     const {
         className,
+        extraAttrs,
     } = props
 
     const title = 'Open menu'
@@ -14,6 +15,7 @@ const BurgerButton = (props) => {
             type="button"
             aria-label={title}
             title={title}
+            {...extraAttrs}
             >
             <svg className="burger-button__svg" width="30" height="30" viewBox="0 0 100 100">
                 <path 

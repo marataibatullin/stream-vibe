@@ -3,6 +3,7 @@ import Logo from '@/components/Logo';
 import './Header.scss';
 import classNames from 'classnames';
 import BurgerButton from '@/components/BurgerButton';
+import Button from '@/components/Button';
 
 const Header = (props) => {
     const {
@@ -53,6 +54,22 @@ const Header = (props) => {
                         ))}
                     </ul>
                 </nav>
+                <div className="header__actions">
+                    <Button 
+                        className='header__button'
+                        label="Search"
+                        isLabelVisible
+                        mode="transparent"
+                        iconName='search'
+                    />
+                    <Button 
+                        href="/" 
+                        label="Notifications"
+                        isLabelVisible
+                        mode="transparent"
+                        iconName='notification'
+                    />
+                </div>
                 <BurgerButton 
                     className="header__burger-button"
                 />

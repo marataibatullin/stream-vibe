@@ -4,7 +4,7 @@ import path from 'path'
 
 export default defineConfig({
   root: "",
-  base: "/stream-vibe/",
+  base: "/",
   public: "public",
   out: "dist",
   assets: {
@@ -37,7 +37,7 @@ export default defineConfig({
       outDir: "assets/images",
       outName: "[dirname]",
       svgstoreOptions: {
-        cleanSymbols: ["fill", "stroke", "stroke-linejoin", "stroke-width"],
+        cleanSymbols: ["fill", "stroke"],
       },
     },
     fonts: {

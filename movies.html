@@ -4,18 +4,172 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stream Vibe | Movies &amp; Shows</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/stream-vibe/assets/images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/stream-vibe/assets/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/stream-vibe/assets/images/favicon-16x16.png">
-    <link rel="manifest" href="/stream-vibe/assets/site.webmanifest">
-    <script src="/stream-vibe/assets/main.js" type="module"></script>
-    <link rel="stylesheet" href="/stream-vibe/assets/bundle.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+    <link rel="manifest" href="/assets/site.webmanifest">
+    <script src="/assets/main.js" type="module"></script>
+    <link rel="stylesheet" href="/assets/bundle.css">
   </head>
   <body>
-    <header>HEADER</header>
+    <header class="header" data-js-overlay-menu="">
+      <div class="header__inner container">
+        <a class="header__top logo" href="/" title="Home" aria-label="Home">
+          <img src="/assets/images/logo.svg" alt="" class="logo__image" width="199" height="60" loading="eager">
+        </a>
+        <dialog class="header__overlay-menu-dialog" data-js-overlay-menu-dialog="">
+          <nav class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a href="/" class="header__menu-link">Home</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/movies" class="header__menu-link is-active">Movies &amp; Shows</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/support" class="header__menu-link">Support</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/subscriptions" class="header__menu-link">Subscriptions</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__actions">
+            <button class="header__button button button--transparent" title="Search" aria-label="Search" type="button"><span class="button__icon icon">
+                <svg fill="none" stroke="currentColor">
+                  <use href="/assets/images/icons.svg#search"></use>
+                </svg>
+              </span></button>
+            <a class="button button--transparent" title="Notifications" aria-label="Notifications" href="/"><span class="button__icon icon">
+                <svg fill="none" stroke="currentColor">
+                  <use href="/assets/images/icons.svg#notification"></use>
+                </svg>
+              </span></a>
+          </div>
+        </dialog>
+        <button class="header__burger-button visible-tablet burger-button" type="button" aria-label="Open menu" title="Open menu" data-js-overlay-menu-burger-button="">
+          <svg class="burger-button__svg" width="30" height="30" viewBox="0 0 100 100">
+            <path class="burger-button__line burger-button__line--1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"></path>
+            <path class="burger-button__line burger-button__line--2" d="M 20,50 H 80"></path>
+            <path class="burger-button__line burger-button__line--3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
     <main class="content">
       <h1>Фильмы</h1>
     </main>
-    <footer>FOOTER</footer>
+    <footer class="footer">
+      <div class="footer__inner container">
+        <nav class="footer__menu">
+          <div class="footer__menu-column">
+            <a href="/" class="footer__menu-title h6">Home</a>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a href="/" class="footer__menu-link">Categories</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="/" class="footer__menu-link">Devices</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="/" class="footer__menu-link">Pricing</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="/" class="footer__menu-link">FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu-column">
+            <a href="/" class="footer__menu-title h6">Movies</a>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a href="/" class="footer__menu-link">Gernes</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="/" class="footer__menu-link">Trending</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="/" class="footer__menu-link">New Release</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="/" class="footer__menu-link">Popular</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu-column">
+            <a href="/" class="footer__menu-title h6">Shows</a>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a href="/" class="footer__menu-link">Gernes</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="/" class="footer__menu-link">Trending</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="/" class="footer__menu-link">New Release</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="/" class="footer__menu-link">Popular</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu-column">
+            <a href="/" class="footer__menu-title h6">Support</a>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a href="/" class="footer__menu-link">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu-column">
+            <a href="/" class="footer__menu-title h6">Subscription</a>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a href="/" class="footer__menu-link">Plans</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="/" class="footer__menu-link">Features</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu-column">
+            <a href="/" class="footer__menu-title h6">Connect With Us</a>
+            <div class="footer__soc1als soc1als">
+              <ul class="soc1als__list">
+                <li class="soc1als__item">
+                  <a class="soc1als__link button button--black-10" title="Facebook" aria-label="Facebook" href="/" target="_blank"><span class="button__icon icon">
+                      <svg fill="currentColor" stroke="none">
+                        <use href="/assets/images/icons.svg#facebook"></use>
+                      </svg>
+                    </span></a>
+                </li>
+                <li class="soc1als__item">
+                  <a class="soc1als__link button button--black-10" title="Twitter" aria-label="Twitter" href="/" target="_blank"><span class="button__icon icon">
+                      <svg fill="currentColor" stroke="none">
+                        <use href="/assets/images/icons.svg#twitter"></use>
+                      </svg>
+                    </span></a>
+                </li>
+                <li class="soc1als__item">
+                  <a class="soc1als__link button button--black-10" title="LinkedIn" aria-label="LinkedIn" href="/" target="_blank"><span class="button__icon icon">
+                      <svg fill="currentColor" stroke="none">
+                        <use href="/assets/images/icons.svg#linked-in"></use>
+                      </svg>
+                    </span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="footer__extra">
+          <p class="footer__copyright">@<time dateTime="2023"></time> streamvibe, All Rights Reserved</p>
+          <div class="footer__extra-links">
+            <a class="footer_extra-link" href="/">Terms of Use</a>
+            <a class="footer_extra-link" href="/">Privacy Policy</a>
+            <a class="footer_extra-link" href="/">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

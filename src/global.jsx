@@ -13,6 +13,7 @@ export default function (props) {
     children,
     title,
     url,
+    isHeaderFixed,
   } = props;
 
   return (
@@ -25,7 +26,7 @@ export default function (props) {
         <link rel="icon" type="image/png" sizes="16x16" href={favicon16} />
         <link rel="manifest" href={manifest} />
       </Head>
-      <Header url={url} />
+      <Header url={url} isFixed={isHeaderFixed} />
       <Content>
         {children}
       </Content>

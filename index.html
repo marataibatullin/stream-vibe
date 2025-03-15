@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stream Vibe | Home</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/stream-vibe/assets/images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/stream-vibe/assets/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/stream-vibe/assets/images/favicon-16x16.png">
-    <link rel="manifest" href="/stream-vibe/assets/site.webmanifest">
-    <script src="/stream-vibe/assets/main.js" type="module"></script>
-    <link rel="stylesheet" href="/stream-vibe/assets/bundle.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+    <link rel="manifest" href="/assets/site.webmanifest">
+    <script src="/assets/main.js" type="module"></script>
+    <link rel="stylesheet" href="/assets/bundle.css">
   </head>
   <body>
-    <header class="header" data-js-overlay-menu="">
+    <header class="header is-fixed" data-js-overlay-menu="">
       <div class="header__inner container">
         <a class="header__top logo" href="/" title="Home" aria-label="Home">
-          <img src="/stream-vibe/assets/images/logo.svg" alt="" class="logo__image" width="199" height="60" loading="eager">
+          <img src="/assets/images/logo.svg" alt="" class="logo__image" width="199" height="60" loading="eager">
         </a>
         <dialog class="header__overlay-menu-dialog" data-js-overlay-menu-dialog="">
           <nav class="header__menu">
@@ -37,12 +37,12 @@
           <div class="header__actions">
             <button class="header__button button button--transparent" title="Search" aria-label="Search" type="button"><span class="button__icon icon">
                 <svg fill="none" stroke="currentColor">
-                  <use href="/stream-vibe/assets/images/icons.svg#search"></use>
+                  <use href="/assets/images/icons.svg#search"></use>
                 </svg>
               </span></button>
             <a class="button button--transparent" title="Notifications" aria-label="Notifications" href="/"><span class="button__icon icon">
                 <svg fill="none" stroke="currentColor">
-                  <use href="/stream-vibe/assets/images/icons.svg#notification"></use>
+                  <use href="/assets/images/icons.svg#notification"></use>
                 </svg>
               </span></a>
           </div>
@@ -57,7 +57,28 @@
       </div>
     </header>
     <main class="content">
-      <h1>Главная</h1>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__pano">
+          <div class="hero__pano-inner container">
+            <button class="hero__play-button" type="button" aria-label="Play Video" title="Play Video">
+              <img class="hero__play-button-image" src="/assets/images/play.svg" alt="" width="470" height="470">
+            </button>
+          </div>
+        </div>
+        <div class="hero__body">
+          <div class="hero__body-inner container">
+            <h1 class="hero__title" id="hero-title">The Best Streaming Experience</h1>
+            <div class="hero__description">
+              <p>StreamVibe is the best streaming experience for watching your favorite movies and shows on demand, anytime, anywhere. With StreamVibe, you can enjoy a wide variety of content, including the latest blockbusters, classic movies, popular TV shows, and more. You can also create your own watchlists, so you can easily find the content you want to watch.</p>
+            </div>
+            <button class="hero__button button" type="button"><span class="button__icon icon">
+                <svg fill="currentColor" stroke="none">
+                  <use href="/assets/images/icons.svg#play"></use>
+                </svg>
+              </span><span class="button__label">Start Watching Now</span></button>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="footer__inner container">
@@ -139,21 +160,21 @@
                 <li class="soc1als__item">
                   <a class="soc1als__link button button--black-10" title="Facebook" aria-label="Facebook" href="/" target="_blank"><span class="button__icon icon">
                       <svg fill="currentColor" stroke="none">
-                        <use href="/stream-vibe/assets/images/icons.svg#facebook"></use>
+                        <use href="/assets/images/icons.svg#facebook"></use>
                       </svg>
                     </span></a>
                 </li>
                 <li class="soc1als__item">
                   <a class="soc1als__link button button--black-10" title="Twitter" aria-label="Twitter" href="/" target="_blank"><span class="button__icon icon">
                       <svg fill="currentColor" stroke="none">
-                        <use href="/stream-vibe/assets/images/icons.svg#twitter"></use>
+                        <use href="/assets/images/icons.svg#twitter"></use>
                       </svg>
                     </span></a>
                 </li>
                 <li class="soc1als__item">
                   <a class="soc1als__link button button--black-10" title="LinkedIn" aria-label="LinkedIn" href="/" target="_blank"><span class="button__icon icon">
                       <svg fill="currentColor" stroke="none">
-                        <use href="/stream-vibe/assets/images/icons.svg#linked-in"></use>
+                        <use href="/assets/images/icons.svg#linked-in"></use>
                       </svg>
                     </span></a>
                 </li>
